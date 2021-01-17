@@ -13,7 +13,7 @@ Using Docker
 docker run -d -p 25565:25565 --name mc -e VERSION=SNAPSHOT -e EULA=TRUE itzg/minecraft-server
 ```
 
-Manually (version 1.16.4)
+Manually (version 1.16.5)
 
 > Windows Powershell get [Chocolatey](https://chocolatey.org/install)
 
@@ -25,30 +25,12 @@ cd JavaServer
 2. Install Java
    * Debian: `sudo apt install openjdk-8-jdk`
    * Powershell: (Start as administrator) `choco install openjdk`
-3. Download server `wget https://launcher.mojang.com/v1/objects/35139deedbd5182953cf1caa23835da59ca3d7cd/server.jar`
+3. Download server `wget https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar` (1.16.5)
+   * Legacy Version
+     * 1.16.4 `wget https://launcher.mojang.com/v1/objects/35139deedbd5182953cf1caa23835da59ca3d7cd/server.jar`
 4. Run server `java -Xmx1024M -Xms1024M -jar server.jar nogui`
 
-## Backup
-
-Current server is generated with seed `4154344611007999313`. Which the initial spawn point is near by a Village and a [Nether Portal](https://minecraft.gamepedia.com/Nether_portal). In addition, the Nether Portal in Nether is near by a [Nether Fortress](https://minecraft.gamepedia.com/Nether_Fortress).
-
-The world backup can be found in [release](https://github.com/daviddwlee84/Minecraft/releases) page.
-
-### Github Release Backup
-
-1. Install [GitHub CLI](https://cli.github.com/) ([Repository](https://github.com/cli/cli))
-   * Debian
-     * `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0`
-     * `sudo apt-add-repository https://cli.github.com/packages`
-     * `sudo apt update`
-     * `sudo apt install gh`
-   * Powershell: `choco install gh`
-2. Make sure the server is stop ([Is it safe to close Minecraft's multiplayer server? - Arqade](https://gaming.stackexchange.com/questions/19914/is-it-safe-to-close-minecrafts-multiplayer-server))
-   1. In Minecraft console: `save-all`
-   2. In Minecraft console: `close`
-3. Compress the world by `zip -r world.zip world`
-4. Upload the world to Github Release by Github CLI (make sure you have login first `gh auth login`)
-   1. `gh release create vX.Y.Z world.zip`
+> [java - What are the -Xms and -Xmx parameters when starting JVM? - Stack Overflow](https://stackoverflow.com/questions/14763079/what-are-the-xms-and-xmx-parameters-when-starting-jvm)
 
 ## TODO
 
@@ -63,12 +45,24 @@ The world backup can be found in [release](https://github.com/daviddwlee84/Minec
 
 * [Backing up Minecraft worlds – Home](https://help.minecraft.net/hc/en-us/articles/360034754912-Backing-up-Minecraft-worlds-)
 
-### Third-party server
+### Accessory
+
+* [Minecraft Apps - Overview](https://www.chunkbase.com/apps/)
+
+### Third-party Server
 
 Free
 
 * [Aternos | Minecraft servers. Free. Forever.](https://aternos.org/)
 * [Minehut - Free Minecraft Server Hosting](https://minehut.com/)
+
+Paid
+
+* [Shockbyte - Minecraft Server Hosting](https://shockbyte.com/)
+
+Uncategorized
+
+* [SpigotMC - High Performance Minecraft](https://www.spigotmc.org/)
 
 ### Github
 
@@ -90,6 +84,12 @@ Backup
 * [Programs and editors/Backup utilities – Official Minecraft Wiki](https://minecraft.gamepedia.com/Programs_and_editors/Backup_utilities)
 
 ---
+
+Vanilla Server World into Single Player World?
+
+* [How do I convert a server world into a single player world? - Java Edition Support - Support - Minecraft Forum - Minecraft Forum](https://www.minecraftforum.net/forums/support/java-edition-support/2455400-how-do-i-convert-a-server-world-into-a-single)
+* [minecraft java edition - How do I convert a SMP server world into a Single-player compatable world? - Arqade](https://gaming.stackexchange.com/questions/188559/how-do-i-convert-a-smp-server-world-into-a-single-player-compatable-world)
+* [How do we transfer a multiplayer server world to single-player? : Minecraft](https://www.reddit.com/r/Minecraft/comments/a9ytnv/how_do_we_transfer_a_multiplayer_server_world_to/)
 
 ## Trouble Shooting
 
