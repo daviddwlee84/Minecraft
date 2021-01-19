@@ -29,6 +29,7 @@ cd JavaServer
    * Legacy Version
      * 1.16.4 `wget https://launcher.mojang.com/v1/objects/35139deedbd5182953cf1caa23835da59ca3d7cd/server.jar`
 4. Run server `java -Xmx1024M -Xms1024M -jar server.jar nogui`
+   * If your server has more resource, then: `java -Xmx8G -Xms8G -jar server.jar nogui`
 
 > [java - What are the -Xms and -Xmx parameters when starting JVM? - Stack Overflow](https://stackoverflow.com/questions/14763079/what-are-the-xms-and-xmx-parameters-when-starting-jvm)
 
