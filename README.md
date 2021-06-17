@@ -13,23 +13,24 @@ Using Docker
 docker run -d -p 25565:25565 --name mc -e VERSION=SNAPSHOT -e EULA=TRUE itzg/minecraft-server
 ```
 
-Manually (version 1.16.5)
+Manually (version 1.17)
 
 > Windows Powershell get [Chocolatey](https://chocolatey.org/install)
 
-```sh
-cd JavaServer
-```
-
 1. Clone this project
 2. Install Java
-   * Debian: `sudo apt install openjdk-8-jdk`
+   * Debian: `./download_jdk_17.sh`
+     * Deprecated: `sudo apt install openjdk-8-jdk`
    * Powershell: (Start as administrator) `choco install openjdk`
-3. Download server `wget https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar` (1.16.5)
+3. Download server 
+   * Debian: `./setup_debian.sh`
    * Legacy Version
      * 1.16.4 `wget https://launcher.mojang.com/v1/objects/35139deedbd5182953cf1caa23835da59ca3d7cd/server.jar`
-4. Run server `java -Xmx1024M -Xms1024M -jar server.jar nogui`
-   * If your server has more resource, then: `java -Xmx8G -Xms8G -jar server.jar nogui`
+     * 1.16.5 `wget https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar`
+4. Run server
+   * `./run_server.sh`
+   * Deprecated: `java -Xmx1024M -Xms1024M -jar server.jar nogui` (`cd JavaServer`)
+     * If your server has more resource, then: `java -Xmx8G -Xms8G -jar server.jar nogui`
 
 > [java - What are the -Xms and -Xmx parameters when starting JVM? - Stack Overflow](https://stackoverflow.com/questions/14763079/what-are-the-xms-and-xmx-parameters-when-starting-jvm)
 
@@ -105,3 +106,16 @@ Edit `eula.txt` and change `eula=false` to `eula=true`
 * [【問題】關於伺服器架設出現can't keep up的問題 @Minecraft 我的世界（當個創世神） 哈啦板 - 巴哈姆特](https://forum.gamer.com.tw/C.php?bsn=18673&snA=171740)
 
 Assign more memory
+
+### Error: A JNI error has occurred, please check your installation and try again
+
+* [A JNI error has occurred, please check your installation and try again](https://bugs.mojang.com/browse/MC-225505)
+* [Minecraft ‘A JNI error has occurred, please check your installation and try again’ or ‘Java exception’ after 1.17 update? Here’s how to fix](https://piunikaweb.com/2021/06/11/minecraft-jni-error-java-exception-1-17-update/)
+* [Error while launcher a 1.17 minecraft server FIX - Reddit](https://www.reddit.com/r/Minecraft/comments/nv92fg/error_while_launcher_a_117_minecraft_server_fix/)
+* [How To Fix Minecraft 1.17 Release/Pre-release/Release Candidates JNI Error in TLauncher - YouTube](https://www.youtube.com/watch?v=mLohOG8FQ-w)
+* [How To Install OpenJDK 16 On Ubuntu 20.04 LTS](https://java.tutorials24x7.com/blog/how-to-install-openjdk-16-on-ubuntu-20-04-lts)
+* [openjdk-16 package in Ubuntu](https://launchpad.net/ubuntu/+source/openjdk-16)
+  * [How to install package from launchpad - StackOverflow](https://stackoverflow.com/questions/41664783/how-to-install-package-from-launchpad)
+  * [Ubuntu: How to install package from launchpad.net? - YouTube](https://www.youtube.com/watch?v=YNdOYqRGQlA)
+* [Install The Latest OpenJDK 17, 16, 15, 13, 11 or 8 in Ubuntu, Debian or RHEL Using Zulu OpenJDK Builds](https://www.linuxuprising.com/2019/04/install-latest-openjdk-12-11-or-8-in.html)
+
