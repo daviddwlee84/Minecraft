@@ -13,7 +13,7 @@ Using Docker
 docker run -d -p 25565:25565 --name mc -e VERSION=SNAPSHOT -e EULA=TRUE itzg/minecraft-server
 ```
 
-Manually (version 1.17)
+Manually (version 1.17.1)
 
 > Windows Powershell get [Chocolatey](https://chocolatey.org/install)
 
@@ -27,6 +27,7 @@ Manually (version 1.17)
    * Legacy Version
      * 1.16.4 `wget https://launcher.mojang.com/v1/objects/35139deedbd5182953cf1caa23835da59ca3d7cd/server.jar`
      * 1.16.5 `wget https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar`
+     * 1.17 `wget https://launcher.mojang.com/v1/objects/0a269b5f2c5b93b1712d0f5dc43b6182b9ab254e/server.jar`
 4. Run server
    * `./run_server.sh`
    * Deprecated: `java -Xmx1024M -Xms1024M -jar server.jar nogui` (`cd JavaServer`)
