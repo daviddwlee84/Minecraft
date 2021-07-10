@@ -28,7 +28,9 @@ And you can cheat by using this [Seed Map Minecraft App](https://www.chunkbase.c
 
 ## Note
 
-| My Github Release Tag | Minecraft Official Server |
-| --------------------- | ------------------------- |
-| v1.0.X                | 1.16.4                    |
-| v1.1.X                | 1.16.5                    |
+| My Github Release Tag | Minecraft Official Server | Remark      |
+| --------------------- | ------------------------- | ----------- |
+| v1.0.X                | 1.16.4                    | Vanilla     |
+| v1.1.X                | 1.16.5                    | Vanilla     |
+| v2.0.X                | 1.17(.0)                  | Vanilla     |
+| v2.1.X                | 1.17.1                    | With Fabric |

@@ -1,5 +1,7 @@
 JavaServer/log*
-jdk-17
+JavaServer/.fabric*
+JavaServer/.mixin.out
+jdk-17/
 
 # Compiled class file
 *.class

@@ -1,5 +1,9 @@
 # Minecraft
 
+In this repository, we will use Fabric as the module loader/manager.
+
+I aim to keep game simple/vanilla and focus on performance related stuff.
+
 ## Setup a Server
 
 ### Official
@@ -7,13 +11,13 @@
 * [Tutorials/Setting up a server – Official Minecraft Wiki](https://minecraft.gamepedia.com/Tutorials/Setting_up_a_server)
 * [Minecraft Server Download | Minecraft](https://www.minecraft.net/en-us/download/server)
 
-Using Docker
+Using Docker (TODO: install Fabric)
 
 ```sh
 docker run -d -p 25565:25565 --name mc -e VERSION=SNAPSHOT -e EULA=TRUE itzg/minecraft-server
 ```
 
-Manually (version 1.17.1)
+Manually with Fabric (version 1.17.1)
 
 > Windows Powershell get [Chocolatey](https://chocolatey.org/install)
 
@@ -22,16 +26,21 @@ Manually (version 1.17.1)
    * Debian: `./download_jdk_17.sh`
      * Deprecated: `sudo apt install openjdk-8-jdk`
    * Powershell: (Start as administrator) `choco install openjdk`
-3. Download server 
-   * Debian: `./setup_debian.sh`
+3. Download server and Fabric (as mod loader)
+   * Debian: `./setup_fabric.sh`
+     * Deprecated: `download_server.sh`
    * Legacy Version
      * 1.16.4 `wget https://launcher.mojang.com/v1/objects/35139deedbd5182953cf1caa23835da59ca3d7cd/server.jar`
      * 1.16.5 `wget https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar`
      * 1.17 `wget https://launcher.mojang.com/v1/objects/0a269b5f2c5b93b1712d0f5dc43b6182b9ab254e/server.jar`
-4. Run server
+4. (Optional) Install modules
+   * `./setup_mods.sh`
+5. Run server
    * `./run_server.sh`
    * Deprecated: `java -Xmx1024M -Xms1024M -jar server.jar nogui` (`cd JavaServer`)
      * If your server has more resource, then: `java -Xmx8G -Xms8G -jar server.jar nogui`
+
+(Debian all in one script `./setup_debian.sh`)
 
 > [java - What are the -Xms and -Xmx parameters when starting JVM? - Stack Overflow](https://stackoverflow.com/questions/14763079/what-are-the-xms-and-xmx-parameters-when-starting-jvm)
 
