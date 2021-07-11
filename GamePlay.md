@@ -25,12 +25,3 @@ And you can cheat by using this [Seed Map Minecraft App](https://www.chunkbase.c
 3. Compress the world by `zip -r world.zip world`
 4. Upload the world to Github Release by Github CLI (make sure you have login first `gh auth login`)
    1. `gh release create vX.Y.Z world.zip`
-
-## Note
-
-| My Github Release Tag | Minecraft Official Server | Remark      |
-| --------------------- | ------------------------- | ----------- |
-| v1.0.X                | 1.16.4                    | Vanilla     |
-| v1.1.X                | 1.16.5                    | Vanilla     |
-| v2.0.X                | 1.17(.0)                  | Vanilla     |
-| v2.1.X                | 1.17.1                    | With Fabric |

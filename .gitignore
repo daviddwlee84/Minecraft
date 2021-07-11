@@ -1,6 +1,3 @@
-JavaServer/log*
-JavaServer/.fabric*
-JavaServer/.mixin.out
 jdk-17/
 
 # Compiled class file
@@ -33,3 +30,9 @@ JavaServer/logs
 !JavaServer/logs/.gitkeep
 JavaServer/world
 !JavaServer/world/.gitkeep
+JavaServer/log*
+JavaServer/.fabric*
+JavaServer/.mixin.out
+JavaServer/crash-reports
+# zip split file
+JavaServer/*.z*
