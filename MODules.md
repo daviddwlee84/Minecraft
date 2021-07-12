@@ -5,10 +5,9 @@
 ## Resources
 
 * [Mods - Minecraft - CurseForge](https://www.curseforge.com/minecraft/mc-mods)
-* [1.17 優化模組整理](https://www.notion.so/ac595613bb744e3f9d5467e049397e76?v=a284736c4dcd45fd863e9ba92cea31a2)
 * [Caffeine](https://github.com/CaffeineMC)
 
-## Mod Manager/Loader
+## Mod Loader
 
 > * [What Is The Difference Between Sponge, Forge, & Bukkit Servers? - YouTube](https://www.youtube.com/watch?v=3BN8hJNFj8U)
 > * [客製化伺服器 - Minecraft Wiki，最詳細的官方Minecraft百科](https://minecraft.fandom.com/zh/wiki/%E5%AE%9A%E5%88%B6%E6%9C%8D%E5%8A%A1%E5%99%A8?variant=zh-tw)
@@ -31,7 +30,8 @@
 > Put the mod's jar under the `mods/` folder
 
 * [install [Fabric Wiki]](https://fabricmc.net/wiki/install)
-* [**player:tutorials:install_server [Fabric Wiki]**](https://fabricmc.net/wiki/player:tutorials:install_server)
+  * [**player:tutorials:install_server [Fabric Wiki]**](https://fabricmc.net/wiki/player:tutorials:install_server)
+  * [player:tutorials:install_mcl:windows [Fabric Wiki]](https://fabricmc.net/wiki/player:tutorials:install_mcl:windows)
 
 > * [Mapping source name conflicts detected : fabricmc](https://www.reddit.com/r/fabricmc/comments/ldmyka/mapping_source_name_conflicts_detected/)
 > * [Fabric Crashes on launch - Mapping source name conflicts detected · Issue #1086 · FabricMC/fabric](https://github.com/FabricMC/fabric/issues/1086)
@@ -55,11 +55,67 @@
 * [Get Bukkit | Download CraftBukkit 1.17.1 | Download Spigot 1.17.1](https://getbukkit.org/)
 * [客製化伺服器/Bukkit - Minecraft Wiki，最詳細的官方Minecraft百科](https://minecraft.fandom.com/zh/wiki/%E5%AE%9A%E5%88%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/Bukkit?variant=zh-tw)
 
+## Mod Manager
+
+### CurseForge
+
+* [CurseForge Mods and Addons | Overwolf.com](https://download.curseforge.com/)
+
 ## Module / Plugin
+
+### Management
+
+#### Mod Menu
+
+> Only work on client side
+
+* [Mod Menu - Mods - Minecraft - CurseForge](https://www.curseforge.com/minecraft/mc-mods/modmenu)
+* [TerraformersMC/ModMenu: A menu for, you guessed it, mods!](https://github.com/TerraformersMC/ModMenu)
+  * [API · TerraformersMC/ModMenu Wiki](https://github.com/TerraformersMC/ModMenu/wiki/API)
 
 ### Performance
 
+* [1.17 優化模組整理](https://www.notion.so/ac595613bb744e3f9d5467e049397e76?v=a284736c4dcd45fd863e9ba92cea31a2)
+
+#### Sodium
+
+> Haven't support 1.17 yet
+
+* [Sodium - Mods - Minecraft - CurseForge](https://www.curseforge.com/minecraft/mc-mods/sodium)
+* [CaffeineMC/sodium-fabric: A Fabric mod designed to improve frame rates and reduce micro-stutter](https://github.com/CaffeineMC/sodium-fabric)
+
+#### Lithium
+
+> It works on both the client and server, and doesn't require the mod to be installed on both sides.
+
+* [CaffeineMC/lithium-fabric: A Fabric mod designed to improve the general performance of Minecraft without breaking things](https://github.com/CaffeineMC/lithium-fabric)
+
+#### Hydrogen
+
+> It works on both the client and server, and doesn't require the mod to be installed on both sides.
+
+* [CaffeineMC/hydrogen-fabric: Things of which are too dangerous to put in Lithium.](https://github.com/CaffeineMC/hydrogen-fabric)
+* [1.17.1 compatibility · Issue #48 · CaffeineMC/hydrogen-fabric](https://github.com/CaffeineMC/hydrogen-fabric/issues/48)
+
+#### Krypton
+
+* [astei/krypton: A Fabric mod that optimizes the Minecraft networking stack and entity tracker.](https://github.com/astei/krypton)
+
+#### FerriteCore
+
+> Good for improve memory usage with low-end computer
+
+* [FerriteCore (Fabric) - Mods - Minecraft - CurseForge](https://www.curseforge.com/minecraft/mc-mods/ferritecore-fabric)
+* [malte0811/FerriteCore](https://github.com/malte0811/FerriteCore)
+
+#### Iris Shaders
+
+* [This is Iris](https://irisshaders.net/)
+* [IrisShaders/Iris: (WIP) A new shaders mod for Minecraft intended to be compatible with existing ShadersMod/Optifine shaders](https://github.com/IrisShaders/Iris)
+
 #### Chunky Pregenerator
+
+> Just install on server side
 
 * [Chunky Pregenerator (Fabric) - Mods - Minecraft - CurseForge](https://www.curseforge.com/minecraft/mc-mods/chunky-pregenerator)
 * [pop4959/Chunky: Generates chunks](https://github.com/pop4959/Chunky)
@@ -136,7 +192,3 @@ chunky start
 [13:18:31] [Chunky-minecraft:overworld Thread/INFO]: [Chunky] Task running for minecraft:overworld. Processed: 4213 chunks (99.72%), ETA: 0:00:00, Rate: 1403.9 cps, Current: 20, 32
 [13:18:31] [Chunky-minecraft:overworld Thread/INFO]: [Chunky] Task finished for minecraft:overworld. Processed: 4225 chunks (100.00%), Total time: 0:00:03
 ```
-
-#### Lithium (for Fabric)
-
-* [CaffeineMC/lithium-fabric: A Fabric mod designed to improve the general performance of Minecraft without breaking things](https://github.com/CaffeineMC/lithium-fabric)

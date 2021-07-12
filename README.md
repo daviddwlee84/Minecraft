@@ -35,6 +35,8 @@ Manually with Fabric (version 1.17.1)
      * 1.17 `wget https://launcher.mojang.com/v1/objects/0a269b5f2c5b93b1712d0f5dc43b6182b9ab254e/server.jar`
 4. (Optional) Install modules
    * `./setup_mods.sh`
+   * Download mods for client
+     * In WSL `./setup_mods.sh /mnt/c/Users/david/AppData/Roaming/.minecraft/mods`
 5. Run server
    * `./run_server.sh`
    * Deprecated: `java -Xmx1024M -Xms1024M -jar server.jar nogui` (`cd JavaServer`)

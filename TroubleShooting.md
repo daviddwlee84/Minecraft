@@ -71,3 +71,16 @@ $ java -jar fabric-server-launch.jar
 ```
 
 => The Fabric "Loader" and the ["Fabric API"](https://www.curseforge.com/minecraft/mc-mods/fabric-api) is different thing. The later one can be seen as one of the plugins.
+
+### Failed to log in: The authentication servers are currently not reachable. Please try again
+
+> * https://www.reddit.com/r/Minecraft/comments/o0wj63/failed_to_log_in_the_authentication_servers_are/
+
+```txt
+[19:56:33] [User Authenticator #18/INFO]: UUID of player TW_DavidLee is 64f7e309-29a2-42c2-bd46-ae873e79e82a
+[19:56:34] [Server thread/INFO]: TW_DavidLee[/140.116.29.90:56975] logged in with entity id 96965 at (-334.65451064156525, 71.0, 189.51249998807907)
+[19:56:34] [Server thread/INFO]: TW_DavidLee joined the game
+[19:58:24] [Server thread/INFO]: TW_DavidLee lost connection: Disconnected
+[19:58:24] [Server thread/INFO]: TW_DavidLee left the game
+[19:59:17] [Server thread/INFO]: com.mojang.authlib.GameProfile@83fd01d[id=<null>,name=TW_DavidLee,properties={},legacy=false] (/117.61.18.173:61779) lost connection: Disconnected
+```
