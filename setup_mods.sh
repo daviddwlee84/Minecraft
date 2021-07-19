@@ -22,3 +22,6 @@ wget https://github.com/CaffeineMC/lithium-fabric/releases/download/mc1.17.1-0.7
 
 # Krypton
 wget https://github.com/astei/krypton/releases/download/v0.1.4/krypton-0.1.4.jar -P $MOD_PATH
+
+# Sodium
+wget https://github.com/CaffeineMC/sodium-fabric/releases/download/mc1.17.1-0.3.0/sodium-fabric-mc1.17.1-0.3.0+build.5.jar -P $MOD_PATH

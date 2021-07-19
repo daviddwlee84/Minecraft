@@ -54,3 +54,11 @@ Goal
 ### Machine Builder (play with redstone system)
 
 ### Build Architectures
+
+---
+
+## PDF
+
+* [Minecraft Redstone Essentials and Must-Do Projects](https://ptgmedia.pearsoncmg.com/images/9780134096773/samplepages/9780134096773.pdf)
+* [Crafting-Guide.pdf](https://education.minecraft.net/wp-content/uploads/Crafting-Guide.pdf)
+* [Microsoft Word - RedstoneBasicsCreative.docx](https://education.minecraft.net/wp-content/uploads/Redstone-Basics.pdf)

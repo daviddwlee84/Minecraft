@@ -79,8 +79,6 @@
 
 #### Sodium
 
-> Haven't support 1.17 yet
-
 * [Sodium - Mods - Minecraft - CurseForge](https://www.curseforge.com/minecraft/mc-mods/sodium)
 * [CaffeineMC/sodium-fabric: A Fabric mod designed to improve frame rates and reduce micro-stutter](https://github.com/CaffeineMC/sodium-fabric)
 
@@ -108,10 +106,19 @@
 * [FerriteCore (Fabric) - Mods - Minecraft - CurseForge](https://www.curseforge.com/minecraft/mc-mods/ferritecore-fabric)
 * [malte0811/FerriteCore](https://github.com/malte0811/FerriteCore)
 
+### Shader Mod
+
 #### Iris Shaders
 
 * [This is Iris](https://irisshaders.net/)
 * [IrisShaders/Iris: (WIP) A new shaders mod for Minecraft intended to be compatible with existing ShadersMod/Optifine shaders](https://github.com/IrisShaders/Iris)
+
+#### OptiFine
+
+* [OptiFine](https://optifine.net/home)
+* [Issues · sp614x/optifine](https://github.com/sp614x/optifine/issues)
+
+### Map Modification
 
 #### Chunky Pregenerator
 
