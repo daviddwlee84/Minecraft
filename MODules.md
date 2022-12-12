@@ -63,6 +63,14 @@
 
 ## Module / Plugin
 
+### Game Play
+
+#### Sit
+
+> [Sitting on stairs : minecraftsuggestions](https://www.reddit.com/r/minecraftsuggestions/comments/abu2yp/sitting_on_stairs/)
+
+* [Sit (Fabric) - Mods - Minecraft - CurseForge](https://www.curseforge.com/minecraft/mc-mods/sit-fabric?__cf_chl_jschl_tk__=pmd_bbd8962dd41fa0b8c0a757ab9f03c2b0a80c11aa-1626769438-0-gqNtZGzNAjijcnBszQni)
+
 ### Management
 
 #### Mod Menu
@@ -78,6 +86,8 @@
 * [1.17 優化模組整理](https://www.notion.so/ac595613bb744e3f9d5467e049397e76?v=a284736c4dcd45fd863e9ba92cea31a2)
 
 #### Sodium
+
+> Not much effect when only using on the server
 
 * [Sodium - Mods - Minecraft - CurseForge](https://www.curseforge.com/minecraft/mc-mods/sodium)
 * [CaffeineMC/sodium-fabric: A Fabric mod designed to improve frame rates and reduce micro-stutter](https://github.com/CaffeineMC/sodium-fabric)
