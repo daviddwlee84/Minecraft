@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  minecraft:
+    build: .
+    container_name: minecraft
+    volumes:
+      - ./JavaServer:/minecraft/JavaServer
+    environment:
+      PORT: 25565
+    ports:
+      - "25565:25565"
+    restart: on-failure
+    # command: "cd /minecraft/JavaServer; java -Xmx4096M -Xms4096M -jar fabric-server-launch.jar"
+    command: "java -Xmx4096M -Xms4096M -jar fabric-server-launch.jar"
