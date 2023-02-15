@@ -84,3 +84,11 @@ $ java -jar fabric-server-launch.jar
 [19:58:24] [Server thread/INFO]: TW_DavidLee left the game
 [19:59:17] [Server thread/INFO]: com.mojang.authlib.GameProfile@83fd01d[id=<null>,name=TW_DavidLee,properties={},legacy=false] (/117.61.18.173:61779) lost connection: Disconnected
 ```
+
+## Windows
+
+### [newline - Bash script – "/bin/bash^M: bad interpreter: No such file or directory" - Stack Overflow](https://stackoverflow.com/questions/14219092/bash-script-bin-bashm-bad-interpreter-no-such-file-or-directory)
+
+```sh
+sed -i -e 's/\r$//' setup_mods.sh
+```
