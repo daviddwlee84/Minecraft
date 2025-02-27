@@ -1,0 +1,23 @@
+
+services:
+  minecraft-bedrock:
+    image: itzg/minecraft-bedrock-server:latest
+    container_name: minecraft-bedrock-server
+    ports:
+      - "19132:19132/udp"  # Minecraft Bedrock default port
+    volumes:
+      - ./data:/data   # Persist world data
+    environment:
+      SERVER_IP: 0.0.0.0   # Bind to all available network interfaces
+      EULA: "TRUE"      # Accept Minecraft's EULA
+      GAMEMODE: survival
+      DIFFICULTY: normal
+    restart: always
+    # networks:
+    #   - minecraft-net
+    stdin_open: true
+    tty: true
+
+# networks:
+#   minecraft-net:
+#     driver: bridge

@@ -1,4 +1,5 @@
 jdk-17/
+BedrockServer/data/
 
 # Compiled class file
 *.class

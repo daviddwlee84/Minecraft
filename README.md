@@ -52,6 +52,7 @@ Manually with Fabric (version 1.17.1)
 * [ ] Make backup script automatically
   * [ ] stop, backup, restart
   * [ ] compress, upload to Github release with new tag
+* [ ] Docker Compose for the Java Version
 
 ## Resources
 
