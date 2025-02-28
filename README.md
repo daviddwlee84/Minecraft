@@ -53,6 +53,14 @@ Manually with Fabric (version 1.17.1)
   * [ ] stop, backup, restart
   * [ ] compress, upload to Github release with new tag
 * [ ] Docker Compose for the Java Version
+  * [itzg/docker-minecraft-server: Docker image that provides a Minecraft Server for Java Edition that automatically downloads selected version at startup](https://github.com/itzg/docker-minecraft-server)
+  * [Examples - Minecraft Server on Docker (Java Edition)](https://docker-minecraft-server.readthedocs.io/en/latest/misc/examples/)
+* [ ] Lazy server
+  * [timvisee/lazymc: 💤 Put your Minecraft server to rest when idle.](https://github.com/timvisee/lazymc)
+    * [joesturge/lazymc-docker-proxy: Put your Minecraft containers to rest when idle.](https://github.com/joesturge/lazymc-docker-proxy)
+  * [vmorganp/Lazytainer: Docker container lazy loading](https://github.com/vmorganp/Lazytainer)
+* [ ] Cross-platform (Bedrock plays on Java)
+  * [Geyser | GeyserMC](https://geysermc.org/)
 
 ## Resources
 

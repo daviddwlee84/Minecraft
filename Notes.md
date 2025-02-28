@@ -1,4 +1,4 @@
-# Arbritrary Notes
+# Arbitrary Notes
 
 ## Release Version Meanings
 
